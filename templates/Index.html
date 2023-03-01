@@ -1,0 +1,584 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66a7f07b65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Document</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+    
+<header id="home">
+    <div class="container">
+       <div class="row text-white" >
+          <div class="col-12" data-aos="fade-up">
+            <div class="home-text">
+                <h5 class=" text-white">Only one kind of Treatment!</h5>
+                <h1 class="text-white fw-bold display-1">YOUR NEW <br> <span>SMILE</span></h1>
+                <a href="{% url 'login' %}" class="btn btn-barnd white ">Book Now</a>
+            </div>
+          </div>
+       </div>
+    </div>
+</header>
+    
+    <!--NAVBAR-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-tooth"></i>
+                DETITION
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Features" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#service" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <div class="input-group ms-auto">
+                        <input type="text" class="form-control" placeholder="Enter Keyword..">
+                            <button type="submit" class="btn btn-text"><i class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+                  </form>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!--ABOUT-->
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row  gy-4 justify-content-between ">
+                <div class="col-lg-5 d-flex align-items-center order-lg-first order-last" data-aos="fade-down">
+                    <div class="title">
+                        <h1 > <span> Welcome to</span>  Dentition</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat omnis consectetur est a sint impedit voluptate,</p>
+                        <ul class="list">
+                            <li class="d-flex align-items-center mt-2">
+                                <div class="icon sm me-3"><i class="ri-check-line"></i></div>
+                                <span>Exceptional Service</span>
+                            </li>
+                            <li class="d-flex  align-items-center mt-2">
+                                <div class="icon sm me-3"><i class="ri-check-line"></i></div>
+                                <span>Exceptional Service</span>
+                            </li>
+
+                        </ul>
+
+                        <a href="#" class="btn btn-barnd">Discover More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-down">
+                    <img src="static/image/1.jpg" alt="" class="rounded">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--FEATURES-->
+
+    <section id="Features" class="section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 text-center" data-aos="fade-down">
+                    <div class="title">
+                        <h1 class="text-white"> <span>Our Awesome</span>  Features</h1>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row text-center gy-4 mt-2">
+                <div class="col-lg-4 col-sm-6"  data-aos="fade-down" data-aos-delay="150">
+                    <div class="service bg-light p-4 rounded-3 shadow">
+                        <div class="icons">
+                            <i class="fa-solid fa-hand-holding-medical"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3 fw-semibold">The Quality of Used Medical Materials</h5>
+                        <p>Lorem ipsum dolor sit amet, sed eiusmod temporinit sit.</p>      
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-sm-6"  data-aos="fade-down" data-aos-delay="250">
+                    <div class="service bg-light p-4 rounded-3 shadow">
+                        <div class="icons">
+                            <i class="fa-solid fa-tooth"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3 fw-semibold">A Full Range of Dental Services</h5>
+                        <p>Lorem ipsum dolor sit amet, sed eiusmod temporinit sit.</p>      
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-sm-6"  data-aos="fade-down" data-aos-delay="350">
+                    <div class="service bg-light p-4 rounded-3 shadow">
+                        <div class="icons">
+                            <i class="fa-solid fa-kit-medical"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3 fw-semibold">A Full Range of Dental Services</h5>
+                        <p>Lorem ipsum dolor sit amet, sed eiusmod temporinit sit.</p>      
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-sm-6"  data-aos="fade-down" data-aos-delay="450">
+                    <div class="service bg-light p-4 rounded-3 shadow">
+                        <div class="icons">
+                            <i class="fa-solid fa-tag"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3 fw-semibold">Loyalty Discounts of Regular Customers</h5>
+                        <p>Lorem ipsum dolor sit amet, sed eiusmod temporinit sit.</p>      
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-sm-6"  data-aos="fade-down" data-aos-delay="550">
+                    <div class="service bg-light p-4 rounded-3 shadow">
+                        <div class="icons">
+                            <i class="fa-solid fa-syringe"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3 fw-semibold">Dental Implants-New Teeth in One Day</h5>
+                        <p>Lorem ipsum dolor sit amet, sed eiusmod temporinit sit.</p>      
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-sm-6"  data-aos="fade-down" data-aos-delay="650">
+                    <div class="service bg-light p-4 rounded-3 shadow">
+                        <div class="icons">
+                            <i class="fa-solid fa-teeth-open"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3 fw-semibold">Modern Methods of Teeth Straightening</h5>
+                        <p>Lorem ipsum dolor sit amet, sed eiusmod temporinit sit.</p>      
+                    </div>
+
+                </div>
+            </div>
+        </div> 
+
+    </section>
+
+    <!--MEET OUR DOCTORS-->
+
+    <Section class="section">
+          <div class="container">
+            <div class="row ">
+                <div class="col-12 text-center" data-aos="fade-down">
+                    <div class="title">
+                        <h1> <span>Meet Our </span> Doctors </h1>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row gy-4 ">
+                <div class="col-lg-3 col-md-6" data-aos="fade-right" data-aos-delay="250">
+                  <div class="tem-members img-zoom shadow">
+                    <div class="img-zoom-img">
+                        <img src="static/image/doctor-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h4 class="text-center text-white">Alex</h4>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-right" data-aos-delay="150">
+                    <div class="tem-members img-zoom shadow">
+                      <div class="img-zoom-img">
+                          <img src="static/image/doc-2.jpg" alt="">
+                      </div>
+                      <div class="content">
+                          <h4 class="text-center text-white">Sara</h4>
+                      </div>
+  
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6" data-aos="fade-left" data-aos-delay="350">
+                    <div class="tem-members img-zoom shadow">
+                      <div class="img-zoom-img">
+                          <img src="static/image/doc-3.jpg" alt="">
+                      </div>
+                      <div class="content">
+                          <h4 class="text-center text-white">John</h4>
+                      </div>
+  
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6" data-aos="fade-left"  data-aos-delay="450" >
+                    <div class="tem-members img-zoom shadow">
+                      <div class="img-zoom-img">
+                          <img src="static/image/doc-4.jpg" alt="">
+                      </div>
+                      <div class="content">
+                          <h4 class="text-center text-white">Emy</h4>
+                      </div>
+  
+                    </div>
+                  </div>
+            </div>
+          </div>
+    </Section>
+
+    <!--SERVICE-->
+
+    <section id="service" class="section">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                        <div class="title">
+                            <h1> <span>Our </span> Services </h1>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="servicess">
+                            <img src="static/image/s1.jpg" alt="">
+                        </div>
+                        <div class="service-text p-3 shadow ">
+                            <h5 class="fw-semibold">Cosmetic Dentistry</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="servicess">
+                            <img src="static/image/s2.jpg" alt="">
+                        </div>
+                        <div class="service-text p-3 shadow ">
+                            <h5 class="fw-semibold">Child’s Dental Visit</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="450">
+                        <div class="servicess">
+                            <img src="static/image/s3.jpg" alt="">
+                        </div>
+                        <div class="service-text p-3 shadow ">
+                            <h5 class="fw-semibold">Complete Whitening</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="550">
+                        <div class="servicess">
+                            <img src="static/image/s4.jpg" alt="">
+                        </div>
+                        <div class="service-text p-3 shadow ">
+                            <h5 class="fw-semibold">Sedation Dentistry</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="650">
+                        <div class="servicess">
+                            <img src="static/image/s5.jpg" alt="">
+                        </div>
+                        <div class="service-text p-3 shadow ">
+                            <h5 class="fw-semibold">Air Flow Cleaning</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="750">
+                        <div class="servicess">
+                            <img src="static/image/s6.jpg" alt="">
+                        </div>
+                        <div class="service-text p-3 shadow ">
+                            <h5 class="fw-semibold">Dental Cleaning</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="850">
+                        <div class="servicess">
+                            <img src="static/image/s7.jpg" alt="">
+                        </div>
+                        <div class="service-text p-3 shadow ">
+                            <h5 class="fw-semibold">Aligning the Teeth</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="950">
+                        <div class="servicess">
+                            <img src="static/image/s8.jpg" alt="">
+                        </div>
+                        <div class="service-text p-3 shadow ">
+                            <h5 class="fw-semibold">Fissure Sealants</h5>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+    </section>
+
+    <!--DOCTOR S-->
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+            <div class="col-lg-6 gy-4">
+                <div class="pro-text d-flex justify-content-between" data-aos="fade-down" data-aos-delay="250">
+                   <div class="col-auto progress-text" >
+                        <h5 class="mb-0 textp">Orthodontics</h5>
+                    </div>
+                    <div class="col-auto progress-text">
+                        <h5 class="mb-0">80%</h5>
+                    </div>
+                </div>
+                    <div class="bar mt-3 mb-4" data-aos="fade-down" data-aos-delay="150" >
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Default striped example" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+                    <div class="pro-text d-flex justify-content-between" data-aos="fade-down" data-aos-delay="450">
+                    <div class="col-auto progress-text">
+                        <h5 class="mb-0 textp">Cosmetic Work</h5>
+                    </div>
+
+                    <div class="col-auto progress-text">
+                        <h5 class="mb-0">95%</h5>
+                    </div>
+                </div>
+                    <div class="bar mt-3 mb-4" data-aos="fade-down" data-aos-delay="350">
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-label="Default striped example" style="width: 95%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+                    <div class="pro-text d-flex justify-content-between" data-aos="fade-down" data-aos-delay="650">
+                    <div class="col-auto progress-text">
+                        <h5 class="mb-0 textp">Implants</h5>
+                    </div>
+                    <div class="col-auto progress-text">
+                        <h5 class="mb-0">60%</h5>
+                    </div>
+                </div>
+                    <div class="bar mt-3 mb-4" data-aos="fade-down" data-aos-delay="550">
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar progress-bar-striped  bg-danger progress-bar-animated" role="progressbar" aria-label="Default striped example" style="width: 60%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+                    <div class="pro-text d-flex justify-content-between" data-aos="fade-down" data-aos-delay="850">
+                    <div class="col-auto progress-text">
+                        <h5 class="mb-0 textp">React</h5>
+                    </div>
+                    <div class="col-auto progress-text">
+                        <h5 class="mb-0">85%</h5>
+                    </div>
+                </div>
+                    <div class="bar mt-3 mb-4" data-aos="fade-down" data-aos-delay="750">
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" aria-label="Default striped example" style="width: 85%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-lg-6 text-center" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <img src="static/image/img1.png" alt="" style="width:300px;">
+                </div>
+                </div>
+            </div>
+
+
+                <div class="bg1 ">
+
+                    <div class="container">
+                        <div class="row d-flex justify-content-between  p-4 ">
+
+                    <div class="col-auto mt-4" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                      <h3 class="text-white">VISIT NOW!</h3>
+                      <p class="text-white">Begin the change today</p>
+                    </div>
+                    <div class="col-auto d-flex  align-items-center" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                        <h5 class="text-white me-4"> +1(23) 456 789 0000</h5>
+                        <a href="http://127.0.0.1:5500/login.html" class="btn btn-barnd white ">Book Now</a>
+                    </div>
+
+                </div>
+
+                </div>
+                </div>
+               
+
+    </section>
+
+    <!--CONTACT-->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 text-center" data-aos="fade-down">
+                    <div class="title">
+                        <h1> Contact <span>Us</span> </h1>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row text-center mt-5" data-aos="fade-down" data-aos-delay="150">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="contact-text ">
+                            <div class="icons">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Location</h5>  
+                            <p>London, 235 Terry, 10001</p>    
+                        </div>
+    
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="contact-text justify-content-center">
+                            <div class="icons">
+                                <i class="fa-sharp fa-solid fa-headset"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Phone</h5>  
+                            <p>+44 123 984 439</p>    
+                        </div>
+    
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="contact-text justify-content-center">
+                            <div class="icons">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Email</h5>  
+                            <p>mail@example.com</p>    
+                        </div>
+    
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="contact-text justify-content-center">
+                            <div class="icons">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Working Hours</h5>  
+                            <p>24 Hours</p>    
+                        </div>
+    
+                    </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-down" data-aos-delay="250">
+                    <form action="" class="row g-3 p-lg-5 p-4 bg-white">
+                        <div class="form-group col-lg-6">
+                            <input type="text" class="form-control" placeholder="Name">
+
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <input type="email" class="form-control" placeholder="Email">
+
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <input type="text" class="form-control" placeholder="Subject">
+
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <input type="number" class="form-control" placeholder="Phone Number">
+
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <textarea name="message" class="form-control" rows="10"
+                            placeholder="Enter message"></textarea>
+
+                        </div>
+                        <div class="form-group">
+                            <a href="http://127.0.0.1:5500/index.html" type="button" class="btn btn-primary">Submit Message</a>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+     
+
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-6 col-sm-6">
+                    <div class="footer-text">
+                        <h4 class="text-white">Contact Info</h4>
+                        <ul>
+                            <li>Address : Dentition, 10001, 5th Avenue, #06 lane street, NY - 62617.</li>
+                            <li>Phone Number : +1(21) 234 4567</li>
+                            <li>Email : info@example.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-sm-6">
+                    <div class="footer-text">
+                        <h4 class="text-white">Categories</h4>
+                        <ul>
+                            <li>Medical</li>
+                            <li>Uncategorized</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-sm-6">
+                    <div class="footer-text">
+                        <h4 class="text-white">Archives</h4>
+                        <ul>
+                            <li>March 2022</li>
+                            <li>August 2021</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-sm-6">
+                    <div class="footer-text">
+                        <h4 class="text-white">Meta</h4>
+                        <ul>
+                            <li>Log in</li>
+                            <li>Entries feed</li>
+                            <li>Comments feed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+    
+
+
+   
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="static/js/main.js"></script>
+   
+</body>
+</html>
